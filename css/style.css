@@ -22,6 +22,7 @@
   font-family: "Fraunces", serif;
   color: #23303e;
   position: relative;
+  cursor: pointer;
 }
 
 #services-section-grid-1 button div, #services-section-grid-4 button div, #testimonials-section button div {
