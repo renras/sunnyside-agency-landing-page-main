@@ -268,12 +268,12 @@ $barlow: "Barlow", sans-serif;
   }
 
   &-grid-2 {
-    @include divWithImage("/images/mobile/image-transform.jpg");
+    @include divWithImage("../images/mobile/image-transform.jpg");
     grid-row: 1 / span 1;
   }
 
   &-grid-3 {
-    @include divWithImage("images/mobile/image-stand-out.jpg");
+    @include divWithImage("../images/mobile/image-stand-out.jpg");
   }
 
   &-grid-4 {
@@ -292,11 +292,11 @@ $barlow: "Barlow", sans-serif;
   }
 
   &-grid-5 {
-    @include grid5Shared("/images/mobile/image-graphic-design.jpg");
+    @include grid5Shared("../images/mobile/image-graphic-design.jpg");
   }
 
   &-grid-6 {
-    @include grid5Shared("/images/mobile/image-photography.jpg");
+    @include grid5Shared("../images/mobile/image-photography.jpg");
   }
 }
 
@@ -430,7 +430,7 @@ footer nav {
   }
 
   #hero-section {
-    background: url("/images/desktop/image-header.jpg") no-repeat center;
+    background: url("../images/desktop/image-header.jpg") no-repeat center;
     background-size: cover;
     padding: 25px 25px 0 25px;
   }
@@ -471,13 +471,13 @@ footer nav {
   #services-section-grid-2 {
     height: 100%;
     grid-column: 2 / span 1;
-    background: url("/images/desktop/image-transform.jpg") no-repeat center;
+    background: url("../images/desktop/image-transform.jpg") no-repeat center;
     background-size: cover;
   }
 
   #services-section-grid-3 {
     height: 100%;
-    background: url("/images/desktop/image-stand-out.jpg") no-repeat center;
+    background: url("../images/desktop/image-stand-out.jpg") no-repeat center;
     background-size: cover;
   }
 
@@ -507,12 +507,13 @@ footer nav {
   }
 
   #services-section-grid-5 {
-    background: url("/images/desktop/image-graphic-design.jpg") no-repeat center;
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat
+      center;
     background-size: cover;
   }
 
   #services-section-grid-6 {
-    background: url("/images/desktop/image-photography.jpg") no-repeat center;
+    background: url("../images/desktop/image-photography.jpg") no-repeat center;
     background-size: cover;
   }
 
