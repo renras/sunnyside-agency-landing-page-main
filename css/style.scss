@@ -400,21 +400,19 @@ footer {
   }
 }
 
-footer nav {
-  ul {
-    display: flex;
-    gap: 60px;
-    list-style: none;
-    justify-content: center;
+footer ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  justify-content: center;
 
-    li {
-      color: $dark-moderate-cyan;
-      font-family: $barlow;
-      font-size: $text-sm;
+  li {
+    color: $dark-moderate-cyan;
+    font-family: $barlow;
+    font-size: $text-sm;
 
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
   }
 }

@@ -492,7 +492,7 @@ footer #footer-logo {
   width: 190px;
 }
 
-footer nav ul {
+footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,13 +503,13 @@ footer nav ul {
           justify-content: center;
 }
 
-footer nav ul li {
+footer ul li {
   color: #458c7e;
   font-family: "Barlow", sans-serif;
   font-size: 16px;
 }
 
-footer nav ul li:hover {
+footer ul li:hover {
   cursor: pointer;
 }
 
