@@ -74,6 +74,29 @@ $barlow: "Barlow", sans-serif;
     }
   }
 }
+
+@mixin learnMoreButton($color) {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-family: $fraunces;
+  color: $very-dark-desaturated-blue;
+  position: relative;
+  cursor: pointer;
+
+  div {
+    position: absolute;
+    top: 12px;
+    width: 131px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: $color;
+    height: 10px;
+    z-index: -10;
+    border-radius: 10px;
+    opacity: 30%;
+  }
+}
 // extend
 
 %services-section-grid-1-shared {
@@ -88,29 +111,6 @@ $barlow: "Barlow", sans-serif;
 
 %h2-shared {
   @include headingText($very-dark-desaturated-blue, $text-lg);
-}
-
-%learn-more-button {
-  background: none;
-  border: none;
-  font-weight: 900;
-  font-family: $fraunces;
-  color: $very-dark-desaturated-blue;
-  position: relative;
-  cursor: pointer;
-
-  div {
-    position: absolute;
-    top: 10px;
-    width: 114px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background: $yellow;
-    height: 10px;
-    z-index: -10;
-    border-radius: 10px;
-    opacity: 30%;
-  }
 }
 
 %testimonials-section-shared {
@@ -254,6 +254,9 @@ $barlow: "Barlow", sans-serif;
   &-grid-1 {
     &-content {
       @extend %services-section-grid-1-shared;
+      div {
+        @include learnMoreButton($yellow);
+      }
     }
     h2 {
       @include headingText($very-dark-desaturated-blue, $text-lg);
@@ -261,10 +264,6 @@ $barlow: "Barlow", sans-serif;
 
     p {
       @include pShared($very-dark-desaturated-blue);
-    }
-
-    button {
-      @extend %learn-more-button;
     }
   }
 
@@ -280,15 +279,15 @@ $barlow: "Barlow", sans-serif;
   &-grid-4 {
     &-content {
       @extend %services-section-grid-1-shared;
+      div {
+        @include learnMoreButton($soft-red);
+      }
     }
     h2 {
       @include headingText($very-dark-desaturated-blue, $text-lg);
     }
     p {
       @include pShared($very-dark-desaturated-blue);
-    }
-    button {
-      @extend %learn-more-button;
     }
   }
 
@@ -313,8 +312,18 @@ $barlow: "Barlow", sans-serif;
     font-weight: 700;
   }
 
-  button {
-    @extend %learn-more-button;
+  #load-more-button-mobile {
+    @include learnMoreButton($yellow);
+    div {
+      width: 118px;
+    }
+  }
+
+  #load-more-button-desktop {
+    @include learnMoreButton($yellow);
+    div {
+      width: 118px;
+    }
   }
 
   #desktop-view-section {
