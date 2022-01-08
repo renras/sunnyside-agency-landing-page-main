@@ -29,32 +29,6 @@
   gap: 40px;
 }
 
-#drawer ul, header div nav {
-  list-style: none;
-  font-size: 16px;
-  color: #a7abae;
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  gap: 10px;
-  background: white;
-  padding: 35px 0;
-}
-
-#drawer ul li, header div nav li {
-  padding: 15px 30px;
-  border-radius: 30px;
-}
-
-#drawer ul li:hover, header div nav li:hover {
-  background: #fad400;
-  color: #23303e;
-  text-transform: uppercase;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 14px;
-  cursor: pointer;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +81,41 @@
   margin-left: auto;
 }
 
+#drawer ul {
+  list-style: none;
+  font-size: 18px;
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  gap: 60px;
+  background: white;
+  padding: 56px 0;
+}
+
+#drawer ul li {
+  position: relative;
+}
+
+#drawer ul li p {
+  padding: 15px 30px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#drawer ul li p:hover {
+  background: #fad400;
+  color: #23303e;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 header {
   background: url("../images/mobile/image-header.jpg") no-repeat center;
   background-size: 100% 100%;
@@ -130,6 +139,60 @@ header div {
 
 header div nav {
   display: none;
+  list-style: none;
+  font-size: 18px;
+  color: #a7abae;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  gap: 60px;
+  background: white;
+  padding: 56px 0;
+  background: none;
+  padding: 0 0;
+}
+
+header div nav li {
+  position: relative;
+}
+
+header div nav li p {
+  padding: 15px 30px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header div nav li p:hover {
+  background: white;
+  color: #23303e;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+header div nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  color: white;
+  gap: 120px;
+  padding: 0 70px;
+}
+
+header div nav li p {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
 }
 
 header #menu {
@@ -617,28 +680,6 @@ footer ul li:hover {
   }
   header div nav {
     display: block;
-    background: none;
-    padding: 0 0;
-  }
-  header div nav ul {
-    gap: unset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    list-style: none;
-    color: white;
-    gap: 20px;
-  }
-  header div nav ul li {
-    padding: 15px 25px;
-    border-radius: 25px;
-  }
-  header div nav ul li:hover {
-    background: white;
   }
   #testimonials-section {
     padding: 120px 25px;
