@@ -15,7 +15,7 @@
   margin-inline: auto;
 }
 
-#drawer ul, #hero-section header nav, #testimonials-section, #mobile-view-section, .client-testimonial-mobile, footer {
+#drawer ul, header div nav, #testimonials-section, #mobile-view-section, .client-testimonial-mobile, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   gap: 40px;
 }
 
-#drawer ul, #hero-section header nav {
+#drawer ul, header div nav {
   list-style: none;
   font-size: 16px;
   color: #a7abae;
@@ -40,12 +40,12 @@
   padding: 35px 0;
 }
 
-#drawer ul li, #hero-section header nav li {
+#drawer ul li, header div nav li {
   padding: 15px 30px;
   border-radius: 30px;
 }
 
-#drawer ul li:hover, #hero-section header nav li:hover {
+#drawer ul li:hover, header div nav li:hover {
   background: #fad400;
   color: #23303e;
   text-transform: uppercase;
@@ -107,14 +107,14 @@
   margin-left: auto;
 }
 
-#hero-section {
+header {
   background: url("../images/mobile/image-header.jpg") no-repeat center;
   background-size: 100% 100%;
   height: 539px;
   padding: 35px 25px 0 25px;
 }
 
-#hero-section header {
+header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,15 +128,15 @@
   margin-inline: auto;
 }
 
-#hero-section header nav {
+header div nav {
   display: none;
 }
 
-#hero-section #menu {
+header #menu {
   height: 20px;
 }
 
-#hero-section #menu:hover {
+header #menu:hover {
   cursor: pointer;
 }
 
@@ -530,7 +530,7 @@ footer ul li:hover {
   #drawer {
     display: none;
   }
-  #hero-section {
+  header {
     background: url("../images/desktop/image-header.jpg") no-repeat center;
     background-size: cover;
     padding: 25px 25px 0 25px;
@@ -615,12 +615,12 @@ footer ul li:hover {
     background: url("../images/desktop/image-photography.jpg") no-repeat center;
     background-size: cover;
   }
-  #hero-section header nav {
+  header div nav {
     display: block;
     background: none;
     padding: 0 0;
   }
-  #hero-section header nav ul {
+  header div nav ul {
     gap: unset;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -633,11 +633,11 @@ footer ul li:hover {
     color: white;
     gap: 20px;
   }
-  #hero-section header nav ul li {
+  header div nav ul li {
     padding: 15px 25px;
     border-radius: 25px;
   }
-  #hero-section header nav ul li:hover {
+  header div nav ul li:hover {
     background: white;
   }
   #testimonials-section {
@@ -668,7 +668,7 @@ footer ul li:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-  #hero-section {
+  header {
     background-size: 100% 100%;
   }
   #services-section-grid-5 {
