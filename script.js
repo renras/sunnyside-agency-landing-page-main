@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       "beforeend",
       `
         <div class='client-testimonial-mobile'>
-            <img src=${clients[index].image}></img>
+            <img src=${clients[index].image} alt="avatar"></img>
             <p class='message'>${clients[index].message}</p>
             <div class='client-info'>
             <b>${clients[index].name}</b>
