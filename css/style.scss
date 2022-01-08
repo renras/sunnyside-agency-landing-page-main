@@ -120,29 +120,37 @@ $barlow: "Barlow", sans-serif;
   gap: 40px;
 }
 
-%drawer-ul-shared {
+@mixin drawerUlShared($color, $fontSize: $text-sm) {
   @extend %testimonials-section-shared;
   list-style: none;
-  font-size: $text-sm;
+  font-size: $base-text;
   color: $grayish-blue;
   font-family: $barlow;
   font-weight: 600;
-  gap: 10px;
+  gap: 60px;
   background: $white;
-  padding: 35px 0;
+  padding: 56px 0;
 
   li {
-    padding: 15px 30px;
-    border-radius: 30px;
+    position: relative;
 
-    &:hover {
-      background: $yellow;
-      color: $very-dark-desaturated-blue;
-      text-transform: uppercase;
-      font-family: $fraunces;
-      font-weight: 900;
-      font-size: 14px;
-      cursor: pointer;
+    p {
+      padding: 15px 30px;
+      border-radius: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &:hover {
+        background: $color;
+        color: $very-dark-desaturated-blue;
+        text-transform: uppercase;
+        font-family: $fraunces;
+        font-weight: 900;
+        font-size: $fontSize;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -198,7 +206,7 @@ $barlow: "Barlow", sans-serif;
   }
 
   ul {
-    @extend %drawer-ul-shared;
+    @include drawerUlShared($yellow);
   }
 }
 
@@ -217,7 +225,26 @@ header {
 
     nav {
       display: none;
-      @extend %drawer-ul-shared;
+      @include drawerUlShared($white, 12px);
+      background: none;
+      padding: 0 0;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        color: $white;
+        gap: 120px;
+        padding: 0 70px;
+      }
+
+      li {
+        p {
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-size: $text-sm;
+        }
+      }
     }
   }
 
@@ -527,26 +554,6 @@ footer ul {
 
   header div nav {
     display: block;
-    background: none;
-    padding: 0 0;
-
-    ul {
-      gap: unset;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      color: $white;
-      gap: 20px;
-
-      li {
-        padding: 15px 25px;
-        border-radius: 25px;
-
-        &:hover {
-          background: $white;
-        }
-      }
-    }
   }
 
   #testimonials-section {
