@@ -15,30 +15,6 @@
   margin-inline: auto;
 }
 
-#services-section-grid-1 button, #services-section-grid-4 button, #testimonials-section button {
-  background: none;
-  border: none;
-  font-weight: 900;
-  font-family: "Fraunces", serif;
-  color: #23303e;
-  position: relative;
-  cursor: pointer;
-}
-
-#services-section-grid-1 button div, #services-section-grid-4 button div, #testimonials-section button div {
-  position: absolute;
-  top: 10px;
-  width: 114px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  background: #fad400;
-  height: 10px;
-  z-index: -10;
-  border-radius: 10px;
-  opacity: 30%;
-}
-
 #drawer ul, #hero-section header nav, #testimonials-section, #mobile-view-section, .client-testimonial-mobile, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,6 +175,30 @@
       grid-template-columns: 1fr;
 }
 
+#services-section-grid-1-content div {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  position: relative;
+  cursor: pointer;
+}
+
+#services-section-grid-1-content div div {
+  position: absolute;
+  top: 12px;
+  width: 131px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #fad400;
+  height: 10px;
+  z-index: -10;
+  border-radius: 10px;
+  opacity: 30%;
+}
+
 #services-section-grid-1 h2 {
   font-size: 30px;
   font-family: "Fraunces", serif;
@@ -229,6 +229,30 @@
   background: url("../images/mobile/image-stand-out.jpg") no-repeat center;
   background-size: 100% 100%;
   height: 350px;
+}
+
+#services-section-grid-4-content div {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  position: relative;
+  cursor: pointer;
+}
+
+#services-section-grid-4-content div div {
+  position: absolute;
+  top: 12px;
+  width: 131px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #fe7867;
+  height: 10px;
+  z-index: -10;
+  border-radius: 10px;
+  opacity: 30%;
 }
 
 #services-section-grid-4 h2 {
@@ -332,6 +356,62 @@
   font-size: 14px;
   text-align: center;
   font-weight: 700;
+}
+
+#testimonials-section #load-more-button-mobile {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  position: relative;
+  cursor: pointer;
+}
+
+#testimonials-section #load-more-button-mobile div {
+  position: absolute;
+  top: 12px;
+  width: 131px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #fad400;
+  height: 10px;
+  z-index: -10;
+  border-radius: 10px;
+  opacity: 30%;
+}
+
+#testimonials-section #load-more-button-mobile div {
+  width: 118px;
+}
+
+#testimonials-section #load-more-button-desktop {
+  background: none;
+  border: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  position: relative;
+  cursor: pointer;
+}
+
+#testimonials-section #load-more-button-desktop div {
+  position: absolute;
+  top: 12px;
+  width: 131px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #fad400;
+  height: 10px;
+  z-index: -10;
+  border-radius: 10px;
+  opacity: 30%;
+}
+
+#testimonials-section #load-more-button-desktop div {
+  width: 118px;
 }
 
 #testimonials-section #desktop-view-section {
