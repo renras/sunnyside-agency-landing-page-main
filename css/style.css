@@ -248,6 +248,14 @@ header #menu:hover {
   cursor: pointer;
 }
 
+#services-section-grid-1-content div:hover {
+  opacity: 70%;
+}
+
+#services-section-grid-1-content div:hover div {
+  opacity: 70%;
+}
+
 #services-section-grid-1-content div div {
   position: absolute;
   top: 12px;
@@ -302,6 +310,14 @@ header #menu:hover {
   color: #23303e;
   position: relative;
   cursor: pointer;
+}
+
+#services-section-grid-4-content div:hover {
+  opacity: 70%;
+}
+
+#services-section-grid-4-content div:hover div {
+  opacity: 70%;
 }
 
 #services-section-grid-4-content div div {
@@ -431,6 +447,14 @@ header #menu:hover {
   cursor: pointer;
 }
 
+#testimonials-section #load-more-button-mobile:hover {
+  opacity: 70%;
+}
+
+#testimonials-section #load-more-button-mobile:hover div {
+  opacity: 70%;
+}
+
 #testimonials-section #load-more-button-mobile div {
   position: absolute;
   top: 12px;
@@ -457,6 +481,14 @@ header #menu:hover {
   color: #23303e;
   position: relative;
   cursor: pointer;
+}
+
+#testimonials-section #load-more-button-desktop:hover {
+  opacity: 70%;
+}
+
+#testimonials-section #load-more-button-desktop:hover div {
+  opacity: 70%;
 }
 
 #testimonials-section #load-more-button-desktop div {
@@ -574,6 +606,7 @@ footer ul li {
 
 footer ul li:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 
 #footer-links {
@@ -587,6 +620,7 @@ footer ul li:hover {
 
 #footer-links li:hover {
   cursor: pointer;
+  opacity: 70%;
 }
 
 @media only screen and (min-width: 750px) {

@@ -84,6 +84,14 @@ $barlow: "Barlow", sans-serif;
   position: relative;
   cursor: pointer;
 
+  &:hover {
+    opacity: 70%;
+
+    div {
+      opacity: 70%;
+    }
+  }
+
   div {
     position: absolute;
     top: 12px;
@@ -440,6 +448,7 @@ footer ul {
 
     &:hover {
       cursor: pointer;
+      opacity: 70%;
     }
   }
 }
@@ -453,6 +462,7 @@ footer ul {
   li {
     &:hover {
       cursor: pointer;
+      opacity: 70%;
     }
   }
 }
